@@ -209,7 +209,7 @@
 
     .topics-card .custom-checkbox-group {
       flex: 1;
-      max-height: 380px;
+      max-height: none;
     }
 
     .section-title {
@@ -228,7 +228,7 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      overflow-y: auto;
+      overflow-y: visible;
       padding-right: 4px;
     }
 
@@ -716,7 +716,7 @@
     .result-card-item.wrong { background: #fee2e2; color: #991b1b; }
     .result-card-item.blank { background: #f3e8ff; color: #6b21a8; }
 
-    /* MOBİL VE TABLET EKRAN UYUMU (RESPONSIVE) */
+    /* MOBİL VE TABLET EKRAN UYUMU */
     @media (max-width: 850px) {
       .config-screen {
         margin: 15px auto;
@@ -733,7 +733,8 @@
         grid-row: span 1;
       }
       .topics-card .custom-checkbox-group {
-        max-height: 200px;
+        max-height: none !important;
+        overflow-y: visible !important;
       }
       .action-bar {
         padding: 10px 14px;
@@ -754,7 +755,6 @@
       .paper-viewport {
         padding: 10px 0;
       }
-      /* MOBİL EKRANDA KAĞIT GENİŞLİĞİNİ ESNET VE TEK SÜTUNA DÜŞÜR */
       .a4-sheet {
         width: 95% !important;
         min-height: auto !important;
@@ -780,7 +780,7 @@
       }
     }
 
-    /* A4 BASKI VE PDF KURALLARI (MOBİLDE BİLE YAZDIRIRKEN TAM A4 2 SÜTUN BASAR) */
+    /* A4 BASKI VE PDF KURALLARI */
     @media print {
       @page {
         size: A4 portrait;
@@ -1012,7 +1012,7 @@
       </button>
 
       <div class="feedback-note">
-        Görüş, öneri ve yanlış soru bildirimi için: <a href="mailto:kgulsen1994@gmail.com">kgulsen1994@gmail.com</a>
+        görüş,öneri ve yanlış soru bildirimi için: <a href="mailto:kgulsen1994@gmail.com">kgulsen1994@gmail.com</a>
       </div>
 
     </div>
@@ -1086,7 +1086,7 @@
   </div>
 
 <script>
-  const AUTOMATIC_JSON_URL = "https://script.google.com/macros/s/AKfycbxji5BJB8jHOqGX6e3r84HCfwWMCfRa6rOvX_PKP5Yih8fkylIzE3vqV5_48-ES38D8/exec";
+  const AUTOMATIC_JSON_URL = "https://script.google.com/macros/s/AKfycbzcasYgCtqURjXDN9OozZiN_vae7fqRGpz-nvnxUtEzmtX6f_St26XR1sXAC8Skgylz/exec";
 
   const defaultFallbackPool = [
     {
